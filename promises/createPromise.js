@@ -37,7 +37,7 @@ function promiseUsingTimeOut() {
 }
 
 console.log("let starting");
-// let p=promiseUsingLoops();
+// let p=promiseUsingLoops();a
 let p=promiseUsingTimeOut();
 // console.log("promise Before executing ",p);
 console.log("promise after executing ",p);
