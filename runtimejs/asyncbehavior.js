@@ -5,7 +5,7 @@ let timer=setInterval(function exec(){
 },1000)
 function timeUsingLoop() {
     console.log("loop start");
-    for (let i = 0; i < 1000000000;i++) {
+    for (let i = 0; i < 10000000000;i++) {
       // console.log();
     }
     setTimeout(()=>{
