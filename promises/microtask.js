@@ -45,9 +45,15 @@ function getRandom(max) {
   p.then(
     function resolver1(value) {
       console.log("in the resolve function1 the value is ", value);
+      setTimeout(()=>{
+        console.log("timer is resolve")
+      },0)
     },
     function rejection1(value) {
       console.log("in the rejection function1 the value is ", value);
+      setTimeout(()=>{
+        console.log("timer is reject")
+      },0)
     }
   );
   p.then(
@@ -68,5 +74,5 @@ function getRandom(max) {
   );
   setTimeout(()=>{
       console.log("after the consuming the promise ,",p);
-  },6000)
+},6000)
   
