@@ -18,7 +18,7 @@ function blocking_code() {
   y.then(function fulfilled2(value) {
     console.log("the fulfill value is ", value);
   });
-  blocking_code
+  blocking_code()
   let z = Promise.reject("qureshi's promise reject");
   z.then(function fulfilled3(value) {
     console.log("the fulfill value is ", value);

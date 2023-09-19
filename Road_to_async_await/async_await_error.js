@@ -105,5 +105,5 @@ downloadData("www.xyz.com")
    
   )
   .catch(function err1(error) {
-    console.log("the process is ", error);
+    console.log("the process error is  ", error);
   });

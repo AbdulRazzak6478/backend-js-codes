@@ -10,7 +10,7 @@ hof(4,function decrease(num){
     return num*num;
 })
 /* 
-    1.inversion of control (due to callback passing controll to the function to execute my fucntion)
-    2.callback hell (readibility problem)
+    1.inversion of control (due to callback passing control to the function to execute my function)
+    2.callback hell (readiability problem)
 */
  

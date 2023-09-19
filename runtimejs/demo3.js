@@ -17,3 +17,14 @@ timeUsingLoop();
 timeUsingRuntime();
 timeUsingLoop();
 console.log("bye");
+
+
+// output
+// hi ,let start
+// loop start
+// loop end
+// timer start
+// loop start 
+// loop end
+// bye
+// complete timer end

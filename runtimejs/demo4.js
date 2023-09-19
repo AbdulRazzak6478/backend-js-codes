@@ -35,3 +35,21 @@ timeUsingRuntimeFeature1();
 timeUsingRuntimeFeature2();
 timeUsingLoop();
 console.log("bye");
+
+
+// output
+// loop start
+// timer start 4
+// loop end
+// timer start 0
+// timer start 1
+// timer start 2
+// loop start
+// timer start 4
+// loop end
+// bye
+// complete timer end 1
+// complete timer end 2
+// complete timer end 4
+// complete timer end 4
+// complete timer end 0

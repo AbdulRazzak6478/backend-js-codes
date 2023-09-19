@@ -9,8 +9,9 @@ function* fetchContent(){
 }
 const iterator=fetchContent();
 console.log("the 1st calling : ",iterator.next())
-console.log("the 1st calling : ",iterator.next())
-console.log("the 1st calling : ",iterator.next(13))
+console.log("the 2nd calling : ",iterator.next())
+// console.log("the 1st calling : ",iterator.next())
+console.log("the 3rd calling : ",iterator.next(13))
 // let i=0;
 // while(i<5)
 // {

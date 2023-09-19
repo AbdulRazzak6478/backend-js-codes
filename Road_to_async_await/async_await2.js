@@ -6,6 +6,6 @@ async function steps(){
     return Promise.resolve("process is done");
 }
 
-steps().then((value)=>{console.log("the end value is :",value)})
+steps().then((value)=>{console.log("the end message is :",value)})
 
 console.log("the end of global code");

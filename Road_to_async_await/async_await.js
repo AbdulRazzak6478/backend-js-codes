@@ -51,7 +51,7 @@ async function steps(){
 }
 
 const iterator=steps();
-console.log("the final msg : ",iterator)
+console.log("the final message is  : ",iterator)
 // const future=iterator.next();
 // console.log(future.value)
 // future.value.then(doAfterReceiving)

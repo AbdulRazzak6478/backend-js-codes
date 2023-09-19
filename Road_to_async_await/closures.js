@@ -17,10 +17,10 @@ console.log("with calling 1 :",ele.next());
 console.log("with calling 2 :",ele.next());
 console.log("with calling 3 :",ele.next());
 console.log("with calling 4 :",ele.next());
-console.log("with calling 5 :",ele.next());
-console.log("with calling 6 :",ele.next());
-console.log("with calling 7 :",ele.next());
-console.log("with calling 8 :",ele.next());
+// console.log("with calling 5 :",ele.next());
+// console.log("with calling 6 :",ele.next());
+// console.log("with calling 7 :",ele.next());
+// console.log("with calling 8 :",ele.next());
 
 const arr={func:ele.next};
 console.log(arr);

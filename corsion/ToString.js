@@ -22,7 +22,7 @@ console.log(Number.isNaN(y));
 console.log(0-"010");
 console.log(""-{});// NaN
 console.log(""+{});// object object
-console.log(""+[12,null,"jhgdfg",0987]);
+console.log(""+[12,null,"jhgdfg", 0987]);
 let obj4={
     x:10,
     y:12,
@@ -33,7 +33,7 @@ let obj4={
         return 17;
     }
 }
-console.log("20" - obj4);
+console.log("20" - obj4); // 3
 let f= function fun(){
     console.log("hello world");
 }

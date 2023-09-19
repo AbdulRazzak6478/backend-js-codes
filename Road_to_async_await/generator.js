@@ -16,6 +16,7 @@ function* fetchContent(){
     return 10;
 }
 const iterator=fetchContent();
+iterator.next();
 let i=0;
 while(i<9)
 {

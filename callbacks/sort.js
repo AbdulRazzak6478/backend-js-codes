@@ -12,3 +12,4 @@ incre_arr.sort(function cmp(a,b){
     return a-b;
 })
 console.log(incre_arr);
+console.log(arr);

@@ -1,8 +1,8 @@
 function downloadData(url) {
     return new Promise(function down(res,rej){
-        console.log("started downloading from the given URL ,", url);
+        console.log("1started downloading from the given URL ,", url);
         setTimeout(function download() {
-          console.log("downloading is completed from the url ", url);
+          console.log("4downloading is completed from the url ", url);
           const content = "ABCDEF";
           res(content);
         }, 5000);
@@ -11,7 +11,7 @@ function downloadData(url) {
   
 function writeFile(content) {
     return new Promise(function writing(res,rej){
-        console.log("started writing the file with the content ", content);
+        console.log("7started writing the file with the content ", content);
         setTimeout(function write() {
           console.log("writing file is completed ");
           const file = "file.text";
@@ -33,7 +33,7 @@ function uploadFile(file, newURL) {
 
 function doAfterReceiving(value)
 {
-    console.log("the value after promise return is ",value)
+    console.log("5the value after promise return is ",value)
     let future=iterator.next(value);
     console.log("the future is ",future)
     if(future.done) return;
@@ -42,7 +42,7 @@ function doAfterReceiving(value)
 
 function* steps(){
     const downloadedData= yield downloadData("www.xyz.com");
-    console.log("data downloaded is ",downloadedData);
+    console.log("6data downloaded is ",downloadedData);
     const fileWritten= yield writeFile(downloadedData);
     console.log("the file is ",fileWritten);
     const response= yield uploadFile(fileWritten,"www.upload.com");
@@ -52,6 +52,6 @@ function* steps(){
 
 const iterator=steps();
 const future=iterator.next();
-console.log(future.value)
+console.log("2ist iterator",future.value)
 future.value.then(doAfterReceiving)
-console.log("the end of global code");
+console.log("3the end of global code");

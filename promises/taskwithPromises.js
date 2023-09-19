@@ -5,9 +5,9 @@
 
 function downloadData(url) {
     return new Promise(function down(res,rej){
-        console.log("started downloading from the given URL ,", url);
+        console.log("1started downloading from the given URL ,", url);
         setTimeout(function download() {
-          console.log("downloading is completed from the url ", url);
+          console.log("2downloading is completed from the url ", url);
           const content = "ABCDEF";
           res(content);
         }, 5000);
@@ -16,9 +16,9 @@ function downloadData(url) {
   
   function writeFile(content) {
     return new Promise(function writing(res,rej){
-        console.log("started writing the file with the content ", content);
+        console.log("4started writing the file with the content ", content);
         setTimeout(function write() {
-          console.log("writing file is completed ");
+          console.log("5writing file is completed ");
           const file = "file.text";
           res(file);
         }, 3000);
@@ -27,9 +27,9 @@ function downloadData(url) {
   
   function uploadFile(file, newURL) {
     return new Promise(function uploading(res,rej){
-        console.log("started uploading the file in the newURL which is ", newURL);
+        console.log("7started uploading the file in the newURL which is ", newURL);
         setTimeout(function upload() {
-          console.log("uploading the ",file," is completed in the ", newURL);
+          console.log("8uploading the ",file," is completed in the ", newURL);
           const response = "SUCCESS";
           res(response)
         }, 4000);
@@ -43,16 +43,16 @@ function downloadData(url) {
   
 let step1=downloadData("www.xyz.com");
 let step2=step1.then(function fulfilled(content){
-    console.log("downloading is done with the content :",content);
+    console.log("3downloading is done with the content :",content);
     return writeFile(content);
 })
 let step3=step2.then(function fulfilled2(file){
-    console.log("writing is done in file :",file);
+    console.log("6writing is done in file :",file);
     return uploadFile(file,"www.upload.com");
 });
 let step4=step3.then(function fulfilled3(response){
-    console.log("uploading is done with the response :",response);
-    return "Process is done and task is completed with promises";
+    console.log("9uploading is done with the response :",response);
+    return "10Process is done and task is completed with promises";
 })
 step4.then(function fulfilled4(message){
     console.log(message);

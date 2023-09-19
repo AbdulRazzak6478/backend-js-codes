@@ -42,20 +42,20 @@ function getRandom(max) {
   // let p = promiseUsingLoops();
   let p=promiseUsingTimeOut();
   console.log("before the consuming the promise ,",p);
-  p.then(
-    function resolver1(value) {
-      console.log("in the resolve function1 the value is ", value);
-      setTimeout(()=>{
-        console.log("timer is resolve")
-      },0)
-    },
-    function rejection1(value) {
-      console.log("in the rejection function1 the value is ", value);
-      setTimeout(()=>{
-        console.log("timer is reject")
-      },0)
-    }
-  );
+  // p.then(
+  //   function resolver1(value) {
+  //     console.log("in the resolve function1 the value is ", value);
+  //     setTimeout(()=>{
+  //       console.log("timer is resolve")
+  //     },0)
+  //   },
+  //   function rejection1(value) {
+  //     console.log("in the rejection function1 the value is ", value);
+  //     setTimeout(()=>{
+  //       console.log("timer is reject")
+  //     },0)
+  //   }
+  // );
   p.then(
     function resolver2(value) {
       console.log("in the resolve function2 the value is ", value);
@@ -64,14 +64,14 @@ function getRandom(max) {
       console.log("in the rejection function2 the value is ", value);
     }
   );
-  p.then(
-    function resolver3(value) {
-      console.log("in the resolve function3 the value is ", value);
-    },
-    function rejection4(value) {
-      console.log("in the rejection function3 the value is ", value);
-    }
-  );
+  // p.then(
+  //   function resolver3(value) {
+  //     console.log("in the resolve function3 the value is ", value);
+  //   },
+  //   function rejection4(value) {
+  //     console.log("in the rejection function3 the value is ", value);
+  //   }
+  // );
   setTimeout(()=>{
       console.log("after the consuming the promise ,",p);
 },6000)
